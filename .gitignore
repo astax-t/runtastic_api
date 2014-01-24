@@ -1,4 +1,4 @@
 /.idea
-
+/sessions/*
 /config.php
 /tracks/*.tcx

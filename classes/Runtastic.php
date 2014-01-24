@@ -2,7 +2,7 @@
 
 class Runtastic
 {
-	const BASE_URL = 'http://www.runtastic.com';
+	const BASE_URL = 'https://www.runtastic.com';
 	protected $last_headers;
 	protected $user_name;
 	protected $curl_session;
@@ -21,6 +21,8 @@ class Runtastic
 				CURLOPT_RETURNTRANSFER => true,
 				CURLOPT_AUTOREFERER => true,
 				CURLOPT_FOLLOWLOCATION => true,
+				CURLOPT_SSL_VERIFYHOST => 0,
+				CURLOPT_SSL_VERIFYPEER => 0,
 			));
 	}
 
